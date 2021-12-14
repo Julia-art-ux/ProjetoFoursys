@@ -5,13 +5,23 @@ import java.util.Scanner;
 public class Exercicio1 {
 
     public static void main(String[] args) {
-//	exercicio1();
-//	exercico2();
-//  exercicio3();
-// exercicio4();
-// exercicio5();
-// exercicio6();
-    exercicio7();
+//exercicio1();
+//exercico2();
+//exercicio3();
+//exercicio4();
+//exercicio5();
+//exercicio6();
+//exercicio7();
+//exercicio8();
+//exercicio9();
+//exercicio10();
+//exercicio11();
+//exercicio12();
+// exercicio13();
+//exercicio14();
+//exercicio15();
+// exercicio16();
+        exercicio17();
 
     }
 
@@ -43,10 +53,10 @@ public class Exercicio1 {
     public static void exercicio4() {
 
         String nome = "Julia Cristina do Nascimento";
-        long telefone = 11975527995;
+        Long celular = 11975527995l;
         String cidade = "Santana de Parnaíba";
 
-        System.out.printf("Nome:%s\nTelefone:%d\nCidade:%s", nome, telefone, cidade);
+        System.out.printf("Nome:%s\nTelefone:%d\nCidade:%s", nome, celular, cidade);
 
     }
 
@@ -85,6 +95,124 @@ public class Exercicio1 {
 
         System.out.println("Digite seu Peso:");
         double peso = scan.nextDouble();
+
+    }
+    public static void exercicio8(){
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print ("Digite seu Salário:");
+        double salario = scan.nextDouble();
+        System.out.print("Digite seu Vale-Refeição:");
+        double valerefeicao = scan.nextDouble();
+        System.out.printf("Seu Salário é %.0f e seu Vale-Refeição é %.0f",salario,valerefeicao);
+
+    }
+    public static void exercicio9(){ ///Soma
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite o valor de X:");
+        int x=scan.nextInt();
+        System.out.println("Digite o valor de Y:");
+        int y=scan.nextInt();
+        int soma = x+y;
+
+        System.out.printf("O resultado da soma entre a variável x e y é igual a:"+ soma);
+    }
+    public static void exercicio10(){ ///Subtração
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite o valor de X:");
+        int x =scan.nextInt();
+        System.out.println("Digite o valor de Y:");
+        int y= scan.nextInt();
+        int subtracao = x-y;
+
+        System.out.printf("O resultado da substração entre a variável x e y é igual a:"+subtracao);
+    }
+
+    public static void exercicio11(){///Multiplicação
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite o valor de x:");
+        int x = scan.nextInt();
+        System.out.println("Digite o valor de y:");
+        int y = scan.nextInt();
+        int multi = x*y;
+
+        System.out.printf("O resultado da multiplicação entre a variavel x e y é igual a:"+multi);
+
+    }
+    public static void  exercicio12(){///Divisão
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite o valor de x:");
+        int x = scan.nextInt();
+        System.out.println("Digite o valor de y:");
+        int y = scan.nextInt();
+        int div = x/y;
+
+        System.out.printf("O resultado da divisão entre a variável x e y é igual a:"+div);
+
+    }
+    public static void exercicio13(){///Exponenciação(Potência)
+
+        double x = 8;
+        double y = 2;
+        double pon = Math.pow(x,y);
+
+        System.out.printf("O resultado da exponencição entre a variavel x e y é igual a:"+ pon);
+    }
+    public static void exercicio14(){///Modulo(Resto)
+        int x = 256;
+        int y = 2;
+        double resto = Math.floorMod(x,y);
+
+        System.out.printf("O resultado do Resto da divisão entre a variável x e y é igual a:"+resto);
+
+    }
+    public static void exercicio15(){//Antecessor da Variável
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite o valor de x:");
+        int x = scan.nextInt();
+        int antecessor = x - 1;
+
+        System.out.printf("O resultado do Antecessor da variável x é igual a:"+antecessor);
+    }
+    public static void exercicio16(){///Área do Retangulo
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite o valor da Base:");
+        double Base = scan.nextDouble();
+        System.out.println("Digite o valor da Altura:");
+        double Altura = scan.nextDouble();
+        double Resultado =Base*Altura;
+
+        System.out.println("A área Total do Retangulo é:"+ Resultado);
+    }
+    public static void exercicio17(){
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite sua idade:");
+        int idade = scan.nextInt();
+        System.out.println("Digite quantos meses:");
+        int meses = scan.nextInt();
+        System.out.println("Digite quantos dias:");
+        int dias = scan.nextInt();
+
+        int idadeAno = idade*365;
+        int idademes = meses*30;
+        int idadedia = dias*24;
+
+        int DiasTotaisdeVida = idadeAno+idademes+idadedia;
+
+        System.out.printf("Sua Idade total em dias vividos são:"+DiasTotaisdeVida);
 
     }
 }
