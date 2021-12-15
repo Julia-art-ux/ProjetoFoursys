@@ -1,5 +1,6 @@
 package oo.intellij;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Exercicio1 {
@@ -21,8 +22,11 @@ public class Exercicio1 {
 //exercicio14();
 //exercicio15();
 // exercicio16();
-        exercicio17();
-
+// exercicio17();
+// exercicio18();
+//exercicio19();
+// exercicio20();
+        exercicio21();
     }
 
     public static void exercicio1() {
@@ -208,11 +212,61 @@ public class Exercicio1 {
 
         int idadeAno = idade*365;
         int idademes = meses*30;
-        int idadedia = dias*24;
+        int idadedia = dias;
 
         int DiasTotaisdeVida = idadeAno+idademes+idadedia;
 
         System.out.printf("Sua Idade total em dias vividos são:"+DiasTotaisdeVida);
 
     }
+    public static void exercicio18(){
+
 }
+
+    public static void exercicio19() {
+
+        Scanner scan = new Scanner(System.in);
+        {
+            System.out.println("Digite o valor do salário atual:");
+            double x = scan.nextDouble();
+            System.out.println("Digite o valor do percentual:");
+            double y = scan.nextDouble();
+            double valorpercentual = (x*y)/100;
+            System.out.println("O valor total do percentual é:"+ valorpercentual);
+            double salarionovo = x + valorpercentual;
+            System.out.printf("O novo salario:"+ salarionovo);
+
+        }
+
+        }
+        public static void exercicio20(){
+
+            Scanner scan = new Scanner(System.in);
+            Locale.setDefault(Locale.US);
+            System.out.println("Digite o valor do Dolar:");
+            double dolar = scan.nextDouble();
+            double ConvReais = dolar * 6.61;
+            System.out.printf("O valor convertido de Dolar para Real:" +ConvReais);
+        }
+        public static void exercicio21(){
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite o Custo de Fábrica:");
+        double custofabrica = scan.nextDouble();
+        double impostos = 0.45;
+        double Distribuidor = 0.28;
+        double custoimpostos = custofabrica*0.45;
+        double custodistribuidor = custofabrica* 0.28;
+        double custofinal = custoimpostos+custodistribuidor+custofabrica;
+        System.out.println("O Valor dos Impostos sobre Custo de Fábrica:"+custoimpostos);
+        System.out.println("0 Valor do Distribuidor sobre o Custo de Fábrica:"+ custodistribuidor);
+        System.out.println("O Custo Final do Carro novo é:"+custofinal);
+
+        }
+
+    }
+
+
+
+
