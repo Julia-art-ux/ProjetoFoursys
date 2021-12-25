@@ -1,5 +1,4 @@
 package oo.intellij;
-
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -18,17 +17,32 @@ public class Exercicio1 {
 //exercicio10();
 //exercicio11();
 //exercicio12();
-// exercicio13();
+//exercicio13();
 //exercicio14();
 //exercicio15();
-// exercicio16();
-// exercicio17();
-// exercicio18();
+//exercicio16();
+//exercicio17();
+//exercicio18();
 //exercicio19();
-// exercicio20();
-// exercicio21();
-// exercicio22();
-exercicio23();
+//exercicio20();
+//exercicio21();
+//exercicio22();
+//exercicio23();
+//exercicio24();
+//exercicio25();
+//exercicio26();
+//exercicio27();
+//exercicio28();
+//exercicio29();
+//exercicio30();
+//exercicio31();
+//exercicio32();
+//exercicio33();
+//exercicio34();
+//exercicio35();
+// exercicio36();
+// exercicio37();
+        exercicio38();
     }
 
     public static void exercicio1() {
@@ -292,11 +306,189 @@ exercicio23();
 
         System.out.println("Digite o grau Fahrenheit:");
         float fahrenheit = scan.nextFloat();
-        float calculo = ((fahrenheit - 32)*5)/9;
-        System.out.println("O resultado da conversão de Fahrenheit para Celsius é:"+ calculo);
+        float calculo = ((fahrenheit - 32) * 5) / 9;
+        System.out.println("O resultado da conversão de Fahrenheit para Celsius é:" + calculo);
 
     }
+
+    public static void exercicio24() {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite o valor da nota 1:");
+        double n1 = scan.nextDouble();
+        System.out.println("Digite o valor da nota 2:");
+        double n2 = scan.nextDouble();
+        System.out.println("Digite o valor da nota 3:");
+        double n3 = scan.nextDouble();
+        double mediafinal = ((n1 * 2 + n2 * 3 + n3 * 5) / 10);
+        System.out.printf("A média final do aluno é:" + mediafinal);
+
+    }
+
+    public static void exercicio25() {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite o valor em reais para abastecer:");
+        double valordinheiro = scan.nextDouble();
+        System.out.println("Digite o preço da gasolina:");
+        double preçogasolina = scan.nextDouble();
+        double litrostotais = valordinheiro / preçogasolina;
+        double valorpagamento = litrostotais * preçogasolina;
+        System.out.println("Consegui colocar no tanque esta quantidade em Litros de gasolina:" + litrostotais);
+        System.out.println("O valor a ser pago é:" + valorpagamento);
+
+    }
+
+    public static void exercicio26() {//////////////////////////////////
+
+    }
+
+    public static void exercicio27() {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Informe a quantidade de camisetas tamanho P:");
+        double quantidadeP = scan.nextDouble();
+        System.out.println("Informe a quantidade de camisetas tamanho M:");
+        double quantidadeM = scan.nextDouble();
+        System.out.println("Informe a quantidade de camisetas tamanho G:");
+        double quantidadeG = scan.nextInt();
+        double totalcamisetas = +quantidadeP + quantidadeM + quantidadeG;
+
+        double precop = 10 * quantidadeP;
+        double precom = 12 * quantidadeM;
+        double precog = 15 * quantidadeG;
+        double totalpagar = precop + precom + precog;
+
+        System.out.printf("A quantidade total de camisetas são %.0f", totalcamisetas);
+        System.out.printf("\nO Preço total a pagar é %.0f reais", totalpagar);
+
+
+    }
+
+    public static void exercicio30() {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Informe o valor Grau Celcius:");
+        double celcius = scan.nextDouble();
+        double conversao = (celcius * 9 / 5) + 32;
+        System.out.printf("Grau fahreinheit:" + conversao + "Fahreinheit");
+
+    }
+
+    public static void exercicio31() {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.printf("Informe a quantidade de frangos:");
+        int numfrango = scan.nextInt();
+        int chipidentificacao = numfrango * 4;
+        System.out.printf("O valor do chip de identificão é:" + chipidentificacao);
+        double chipalimentacao = numfrango * 3.50;
+        System.out.printf("\nO valor total do chip alimentação é:" + chipalimentacao);
+        double gastototal = chipalimentacao + chipidentificacao;
+
+        System.out.printf("\nO gasto total da Granja Frangotech é:" + gastototal + "reais");
+    }
+
+    public static void exercicio32() {
+
+
+    }
+
+    public static void exercicio33() {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Informe a quantidade total de 5 centavos:");
+        double centavos5 = scan.nextDouble();
+        System.out.println("Informe a quantidade total de 10 centavos:");
+        double centavos10 = scan.nextDouble();
+        System.out.println("Informe a quantidade total de 25 centavos:");
+        double centavos25 = scan.nextDouble();
+        System.out.println("Informe a quantidade total de 50 centavos:");
+        double centavos50 = scan.nextDouble();
+        System.out.println("Informe a quantidade total de 1 real em centavos:");
+        double centavos1 = scan.nextDouble();
+
+        double valor5 = centavos5 * 0.05;
+        double valor10 = centavos10 * 0.10;
+        double valor25 = centavos25 * 0.25;
+        double valor50 = centavos50 * 0.50;
+        double valor1 = centavos1 * 1.0;
+
+        double somatotal = (valor5 + valor10 + valor25 + valor1 + valor50);
+
+        System.out.println(somatotal);
+
+    }
+
+
+    public static void exercicio35() {
+
+        Scanner scan = new Scanner(System.in);
+
+
+        System.out.println("Digite seu ano de Nascimento:");
+        int anonascimento = scan.nextInt();
+        System.out.println("Digite seu ano atual:");
+        int anoatual = scan.nextInt();
+
+        int idadeanos = anoatual - anonascimento;
+        System.out.println("Sua idade em anos é:" + idadeanos);
+        int idademeses = idadeanos * 12;
+        System.out.println("Sua idade em meses é:" + idademeses);
+        int idadedias = idadeanos * 365;
+        System.out.println("Sua idade em dias é:" + idadedias);
+        int idadesemanas = idadeanos * 52;
+        System.out.println("Sua idade em semanas é:" + idadesemanas);
+
+    }
+
+    public static void exercicio36() {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite um valor:");
+        int x = scan.nextInt();
+        if (x > 10) {
+            System.out.println("É maior que 10");
+        } else {
+            System.out.println("Não é maior que 10");
+        }
+
+    }
+
+    public static void exercicio37() {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite um valor:");
+        int x = scan.nextInt();
+        if (x >= 0) {
+            System.out.println("Valor Positivo");
+        } else {
+            System.out.println("Valor Negativo");
+        }
+    }
+
+    public static void exercicio38() {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Informe a quantidade de maças compradas:");
+        int x = scan.nextInt();
+
+        if (x < 12) {
+            System.out.println("O preço unitário das maças são R$1,30");
+            double valortotal = x * 1.30;
+            System.out.printf("O valor total a ser pago é :" + valortotal);
+        }
+           else if (x==12){
+            System.out.println("O preço unitário das maças são R$1,00");
+            double valorfinal = x * 1.00;
+            System.out.println("O valor final a ser pago é :" + valorfinal);
+        }
+    }
 }
-
-
-
